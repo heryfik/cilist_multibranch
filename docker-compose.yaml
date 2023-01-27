@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   frontend:
-    image: heryfik/cilist-pipeline-fe:${GIT_COMMIT_SHORT}
+    image: heryfik/cilist-pipeline-deploy:${GIT_COMMIT_SHORT}
     ports:
       - "3000:3000"
     environment:
