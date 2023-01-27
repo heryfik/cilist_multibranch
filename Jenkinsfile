@@ -19,9 +19,9 @@ pipeline {
    stage('Build frontend') {
      steps {
        dir('frontend') {
-         sh 'docker build . -t cilist-pipeline-fe:$GIT_COMMIT_SHORT'
-         sh 'docker tag cilist-pipeline-fe:$GIT_COMMIT_SHORT heryfik/cilist-pipeline-fe:$GIT_COMMIT_SHORT'
-         sh 'docker push heryfik/cilist-pipeline-fe:$GIT_COMMIT_SHORT'
+         sh 'docker build . -t cilist-pipeline-staging:$GIT_COMMIT_SHORT'
+         sh 'docker tag cilist-pipeline-staging:$GIT_COMMIT_SHORT heryfik/cilist-pipeline-staging:$GIT_COMMIT_SHORT'
+         sh 'docker push heryfik/cilist-pipeline-staging:$GIT_COMMIT_SHORT'
        }
      }
    }
