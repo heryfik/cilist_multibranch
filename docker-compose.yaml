@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  frontend:
+    image: heryfik/cilist-pipeline-fe:${GIT_COMMIT_SHORT}
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_BACKEND_URL=http://ec2-3-139-82-10.us-east-2.compute.amazonaws.com:5000
