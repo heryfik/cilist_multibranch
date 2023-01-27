@@ -16,7 +16,7 @@ pipeline {
         echo ("BRACH = ${env.BRANCH_NAME}")
      }
    }
-   stage('Build frontend') {
+   stage('Build Deploy Frontend') {
      steps {
        dir('frontend') {
          sh 'docker build . -t cilist-pipeline-deploy:$GIT_COMMIT_SHORT'
