@@ -7,7 +7,7 @@ const UserList = () => {
   const [users, setUser] = useState([]);
 
   useEffect(() => {
-    document.title = 'Cilist';
+    document.title = 'DEPLOY BRANCH Cilist';
     getUsers();
   }, []);
 
