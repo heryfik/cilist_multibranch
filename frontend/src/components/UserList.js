@@ -33,7 +33,7 @@ const UserList = () => {
   return (
     <div className="columns mt-5 is-centered">
       <div className="column is-half">
-      <Banner title="PROD 11 Users List" />
+      <Banner title="PROD Users List" />
         <Link to={`add`} className="button is-info">
           Add New
         </Link>
